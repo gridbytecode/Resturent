@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royal Saffron | Premium Dine-In & Delivery Restaurant</title>
+    <meta name="description"
+        content="Experience authentic culinary delicacies made from fresh ingredients. Dine-in, take away, or order directly via WhatsApp at The Royal Saffron, Sector 62, Noida.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ================= TOP NOTIFICATION BAR ================= -->
+    <div class="top-announcement-bar">
+        <div class="container announcement-content">
+            <div class="announcement-left">
+                <span><i class="fa-solid fa-clock"></i> Open Today: 11:00 AM – 11:30 PM</span>
+                <span class="desktop-only"><i class="fa-solid fa-location-dot"></i> Sector 62, Noida, Uttar
+                    Pradesh</span>
+            </div>
+            <div class="announcement-right">
+                <a href="tel:+919031762157" class="announcement-link phone-link"><i class="fa-solid fa-phone"></i> +91
+                    9031762157</a>
+                <a href="https://wa.me/919031762157" target="_blank" rel="noopener noreferrer"
+                    class="announcement-link wa-link"><i class="fa-brands fa-whatsapp"></i> WhatsApp Order</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= STICKY HEADER ================= -->
+    <header class="site-header" id="header">
+        <div class="container header-container">
+            <a href="#hero" class="brand-logo" id="logoLink">
+                <div class="logo-emblem">
+                    <i class="fa-solid fa-crown"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="restaurant-name">The Royal Saffron</span>
+                    <span class="restaurant-tagline">FINE DINE & ARTISANAL KITCHEN</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="desktop-nav" aria-label="Main Navigation">
+                <ul class="nav-links">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#categories" class="nav-link">Categories</a></li>
+                    <li><a href="#menu" class="nav-link">Our Menu</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Action Buttons -->
+            <div class="header-actions">
+                <a href="https://wa.me/919031762157" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp"
+                    id="headerWhatsAppBtn">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="tel:+919031762157" class="btn btn-primary" id="headerCallBtn">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call Now</span>
+                </a>
+
+                <!-- Mobile Menu Hamburger -->
+                <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div class="mobile-drawer" id="mobileDrawer">
+            <div class="mobile-drawer-header">
+                <div class="logo-text">
+                    <span class="restaurant-name">The Royal Saffron</span>
+                </div>
+                <button class="drawer-close" id="drawerCloseBtn" aria-label="Close Menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <ul class="mobile-nav-links">
+                <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+                <li><a href="#categories" class="mobile-nav-link">Categories</a></li>
+                <li><a href="#menu" class="mobile-nav-link">Our Menu</a></li>
+                <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact & Location</a></li>
+            </ul>
+            <div class="mobile-drawer-cta">
+                <a href="https://wa.me/919031762157" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-whatsapp btn-block">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+                <a href="tel:+919031762157" class="btn btn-primary btn-block">
+                    <i class="fa-solid fa-phone"></i> Call +91 90317 62157
+                </a>
+            </div>
+        </div>
+        <div class="drawer-overlay" id="drawerOverlay"></div>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero-section" id="hero">
+        <div class="hero-backdrop"></div>
+        <div class="hero-pattern"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">GOOD FOOD • GOOD MOOD</span>
+                </div>
+                <h1 class="hero-title">
+                    Delicious Food For <span class="highlight-gold">Every Moment</span>
+                </h1>
+                <p class="hero-description">
+                    Indulge in a royal symphony of authentic flavours, farm-fresh ingredients, and time-honoured secret
+                    recipes. Prepared fresh daily with warm hospitality for dining in, takeaway, and direct doorstep
+                    delivery.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#menu" class="btn btn-gold btn-large" id="heroMenuBtn">
+                        <span>View Menu</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                    <a href="https://wa.me/919031762157?text=Hello%2C%20I%20would%20like%20to%20place%20an%20order"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-large"
+                        id="heroWhatsAppBtn">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Order on WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Trust Proof Badges in Hero -->
+                <div class="hero-trust-bar">
+                    <div class="trust-item">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span><strong>4.8/5</strong> (2,400+ Foodies)</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <i class="fa-solid fa-utensils gold-icon"></i>
+                        <span>100% Authentic Recipes</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <i class="fa-solid fa-bolt gold-icon"></i>
+                        <span>Quick 30-Min Service</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= RESTAURANT HIGHLIGHTS STRIP ================= -->
+    <section class="highlights-strip">
+        <div class="container">
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon-box">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <div class="highlight-info">
+                        <h3 class="highlight-title">Fresh Ingredients</h3>
+                        <p class="highlight-sub">100% farm-sourced produce & organic spices</p>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-icon-box">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="highlight-info">
+                        <h3 class="highlight-title">Hygienic Food</h3>
+                        <p class="highlight-sub">Highest safety standards & sanitized kitchen</p>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-icon-box">
+                        <i class="fa-solid fa-stopwatch"></i>
+                    </div>
+                    <div class="highlight-info">
+                        <h3 class="highlight-title">Fast & Reliable Service</h3>
+                        <p class="highlight-sub">Speedy preparation & steaming hot delivery</p>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-icon-box">
+                        <i class="fa-solid fa-bowl-food"></i>
+                    </div>
+                    <div class="highlight-info">
+                        <h3 class="highlight-title">Dine In | Take Away | Home Delivery</h3>
+                        <p class="highlight-sub">Seamless ordering options for every craving</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= POPULAR CATEGORIES ================= -->
+    <section class="categories-section section-padding" id="categories">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">CULINARY VARIETIES</span>
+                <h2 class="section-title">Our Popular Categories</h2>
+                <div class="title-ornament">
+                    <span></span>
+                    <i class="fa-solid fa-utensils"></i>
+                    <span></span>
+                </div>
+                <p class="section-subtitle">
+                    From fiery starters and royal main courses to artisanal mocktails and traditional Indian desserts.
+                </p>
+            </div>
+
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- Categories injected dynamically or structured semantically -->
+                <div class="category-card" data-category="all" role="button" tabindex="0">
+                    <div class="cat-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80"
+                            alt="All Items" loading="lazy">
+                        <div class="cat-overlay"></div>
+                    </div>
+                    <div class="cat-content">
+                        <span class="cat-count">12+ Specialties</span>
+                        <h3 class="cat-title">All Items</h3>
+                        <span class="cat-btn">Explore Menu <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="Starters" role="button" tabindex="0">
+                    <div class="cat-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=600&q=80"
+                            alt="Starters" loading="lazy">
+                        <div class="cat-overlay"></div>
+                    </div>
+                    <div class="cat-content">
+                        <span class="cat-count">Tandoor & Crisp</span>
+                        <h3 class="cat-title">Starters</h3>
+                        <span class="cat-btn">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="Main Course" role="button" tabindex="0">
+                    <div class="cat-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80"
+                            alt="Main Course" loading="lazy">
+                        <div class="cat-overlay"></div>
+                    </div>
+                    <div class="cat-content">
+                        <span class="cat-count">Royal Curries & Biryanis</span>
+                        <h3 class="cat-title">Main Course</h3>
+                        <span class="cat-btn">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="Beverages" role="button" tabindex="0">
+                    <div class="cat-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&q=80"
+                            alt="Beverages" loading="lazy">
+                        <div class="cat-overlay"></div>
+                    </div>
+                    <div class="cat-content">
+                        <span class="cat-count">Chilled & Refreshing</span>
+                        <h3 class="cat-title">Beverages</h3>
+                        <span class="cat-btn">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="Desserts" role="button" tabindex="0">
+                    <div class="cat-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80"
+                            alt="Desserts" loading="lazy">
+                        <div class="cat-overlay"></div>
+                    </div>
+                    <div class="cat-content">
+                        <span class="cat-count">Sweet Sensations</span>
+                        <h3 class="cat-title">Desserts</h3>
+                        <span class="cat-btn">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= MENU SECTION ================= -->
+    <section class="menu-section section-padding" id="menu">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">FRESHLY PREPARED</span>
+                <h2 class="section-title">Our Menu</h2>
+                <div class="title-ornament">
+                    <span></span>
+                    <i class="fa-solid fa-utensils"></i>
+                    <span></span>
+                </div>
+                <p class="section-subtitle">
+                    Handcrafted dishes cooked with authentic spices, premium ingredients and pure passion.
+                </p>
+            </div>
+
+            <!-- Menu Controls: Filter Pills & Search -->
+            <div class="menu-controls">
+                <div class="filter-pills-wrapper">
+                    <button class="filter-pill active" data-filter="all">All</button>
+                    <button class="filter-pill" data-filter="Starters">Starters</button>
+                    <button class="filter-pill" data-filter="Main Course">Main Course</button>
+                    <button class="filter-pill" data-filter="Beverages">Beverages</button>
+                    <button class="filter-pill" data-filter="Desserts">Desserts</button>
+                </div>
+
+                <!-- Dietary Quick Filter (Bonus Client Feature) -->
+                <div class="dietary-filter">
+                    <button class="diet-btn" id="dietAll" data-diet="all" title="Show All">All</button>
+                    <button class="diet-btn" id="dietVeg" data-diet="veg" title="Vegetarian Only">
+                        <span class="food-symbol veg"></span> Veg
+                    </button>
+                    <button class="diet-btn" id="dietNonVeg" data-diet="non-veg" title="Non-Vegetarian Only">
+                        <span class="food-symbol non-veg"></span> Non-Veg
+                    </button>
+                </div>
+            </div>
+
+            <!-- Menu Products Grid -->
+            <div class="products-grid" id="productsGrid" aria-live="polite">
+                <!-- Products populated via JavaScript -->
+            </div>
+
+            <!-- Empty State if search/filter yields zero results -->
+            <div class="empty-menu-state" id="emptyMenuState" style="display: none;">
+                <i class="fa-solid fa-bowl-rice"></i>
+                <h3>No dishes found</h3>
+                <p>Try switching categories or clearing dietary filters.</p>
+                <button class="btn btn-gold" id="resetFilterBtn">View All Dishes</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section class="about-section section-padding" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visuals">
+                    <div class="about-image-card main-img">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80"
+                            alt="Restaurant Ambiance & Kitchen" loading="lazy">
+                    </div>
+                    <div class="about-image-card sub-img desktop-only">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80"
+                            alt="Dining Room" loading="lazy">
+                    </div>
+                    <div class="experience-badge">
+                        <span class="badge-num">15+</span>
+                        <span class="badge-txt">Years of Culinary Excellence</span>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <span class="section-tag">OUR CULINARY HERITAGE</span>
+                    <h2 class="section-title">Where Tradition Meets Unrivalled Taste</h2>
+                    <div class="title-ornament ornament-left">
+                        <span></span>
+                        <i class="fa-solid fa-crown"></i>
+                    </div>
+                    <p class="about-lead">
+                        Welcome to <strong>The Royal Saffron</strong>, where every recipe tells a story of culinary
+                        dedication, ancestral spices, and royal hospitality.
+                    </p>
+                    <p class="about-body">
+                        Founded with a passion to bring pure, heartwarming cuisine to food lovers, our chefs hand-select
+                        fresh seasonal produce and slow-roast whole spices in traditional copper handis. Whether you are
+                        dining in with loved ones, enjoying a quick office lunch, or gathering for celebration, we make
+                        each dining experience extraordinary.
+                    </p>
+
+                    <div class="about-features-grid">
+                        <div class="about-feature-item">
+                            <div class="feat-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+                            <div class="feat-text">
+                                <h4>Quality Ingredients</h4>
+                                <p>Pure ghee, hand-ground spices and fresh produce daily.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature-item">
+                            <div class="feat-icon"><i class="fa-solid fa-people-roof"></i></div>
+                            <div class="feat-text">
+                                <h4>Family Friendly</h4>
+                                <p>Spacious, elegant ambiance curated for unforgettable gatherings.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature-item">
+                            <div class="feat-icon"><i class="fa-solid fa-motorcycle"></i></div>
+                            <div class="feat-text">
+                                <h4>Quick Service</h4>
+                                <p>Hot, hygienic delivery directly at your doorstep in 30 minutes.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature-item">
+                            <div class="feat-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div class="feat-text">
+                                <h4>Easy WhatsApp Ordering</h4>
+                                <p>Browse our menu and place your order directly via chat.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-cta">
+                        <a href="tel:+919031762157" class="btn btn-gold">
+                            <i class="fa-solid fa-phone"></i> Call for Reservations
+                        </a>
+                        <a href="https://wa.me/919031762157" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-dark">
+                            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT & LOCATION SECTION ================= -->
+    <section class="contact-section section-padding" id="contact">
+        <div class="container">
+            <div class="section-header text-center light-text">
+                <span class="section-tag">FIND & CONNECT</span>
+                <h2 class="section-title">Visit Us Or Order Today</h2>
+                <div class="title-ornament">
+                    <span></span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span></span>
+                </div>
+                <p class="section-subtitle">
+                    We are delighted to serve you. Reach out for dine-in bookings, takeaway parcel requests, or instant
+                    home deliveries.
+                </p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Contact Cards -->
+                <div class="contact-cards-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <h3 class="contact-card-title">Phone Inquiries</h3>
+                        <p class="contact-card-desc">Call us directly for table reservations or party catering.</p>
+                        <a href="tel:+919031762157" class="contact-card-link phone-display-number">+91 90317 62157</a>
+                        <a href="tel:+919031762157" class="btn btn-outline-gold btn-sm mt-3">
+                            <i class="fa-solid fa-phone"></i> Call Now
+                        </a>
+                    </div>
+
+                    <div class="contact-card highlight-border">
+                        <div class="contact-icon wa-icon-box">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <h3 class="contact-card-title">Instant WhatsApp</h3>
+                        <p class="contact-card-desc">Send your delivery order, ask about chef specials, or book seats.
+                        </p>
+                        <a href="https://wa.me/919031762157" target="_blank" rel="noopener noreferrer"
+                            class="contact-card-link whatsapp-display-number">+91 90317 62157</a>
+                        <a href="https://wa.me/919031762157" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-whatsapp btn-sm mt-3">
+                            <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h3 class="contact-card-title">Restaurant Address</h3>
+                        <p class="contact-card-desc">Sector 62, Noida, Uttar Pradesh 201309</p>
+                        <span class="timing-badge"><i class="fa-regular fa-clock"></i> 11:00 AM – 11:30 PM
+                            (Daily)</span>
+                        <a href="https://maps.google.com/?q=Sector+62+Noida+Uttar+Pradesh" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-outline-gold btn-sm mt-3">
+                            <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Inquiry / Reservation Form -->
+                <div class="quick-booking-box">
+                    <div class="booking-header">
+                        <h3>Quick Table Reservation or Direct Inquiry</h3>
+                        <p>Fill out the details below to send a pre-formatted reservation request straight to our
+                            WhatsApp!</p>
+                    </div>
+                    <form class="booking-form" id="bookingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="bookName">Your Name</label>
+                                <input type="text" id="bookName" class="form-control" placeholder="e.g. Rahul Sharma"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="bookPhone">Contact Number</label>
+                                <input type="tel" id="bookPhone" class="form-control" placeholder="e.g. +91 90317 62157"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="bookGuests">Number of Guests</label>
+                                <select id="bookGuests" class="form-control">
+                                    <option value="1-2 Guests">1–2 Guests</option>
+                                    <option value="3-4 Guests" selected>3–4 Guests</option>
+                                    <option value="5-8 Guests">5–8 Guests</option>
+                                    <option value="8+ Large Gathering">8+ Large Gathering</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="bookTime">Date & Preferred Time</label>
+                                <input type="text" id="bookTime" class="form-control" placeholder="Today at 8:00 PM"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookNote">Special Requests (Optional)</label>
+                            <input type="text" id="bookNote" class="form-control"
+                                placeholder="e.g. Window table, anniversary celebration">
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-gold btn-large">
+                                <i class="fa-brands fa-whatsapp"></i> Reserve via WhatsApp
+                            </button>
+                            <a href="tel:+919031762157" class="btn btn-outline-light btn-large">
+                                <i class="fa-solid fa-phone"></i> Or Call Us Directly
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top-grid">
+                <div class="footer-col footer-brand">
+                    <div class="logo-emblem">
+                        <i class="fa-solid fa-crown"></i>
+                    </div>
+                    <span class="restaurant-name">The Royal Saffron</span>
+                    <p class="footer-desc">
+                        A premium dining destination delivering traditional culinary excellence, fresh farm ingredients,
+                        and heartfelt hospitality to your table.
+                    </p>
+                    <div class="footer-social-links">
+                        <a href="#" class="social-link" aria-label="Instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://wa.me/919031762157" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="tel:+919031762157" class="social-link" aria-label="Phone"><i
+                                class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#categories">Food Categories</a></li>
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#about">About Our Kitchen</a></li>
+                        <li><a href="#contact">Contact & Timings</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Popular Specialties</h4>
+                    <ul class="footer-links">
+                        <li><a href="#menu" class="footer-dish-link" data-dish="Chicken Biryani">Chicken Biryani</a>
+                        </li>
+                        <li><a href="#menu" class="footer-dish-link" data-dish="Butter Chicken">Butter Chicken</a></li>
+                        <li><a href="#menu" class="footer-dish-link" data-dish="Paneer Tikka">Paneer Tikka</a></li>
+                        <li><a href="#menu" class="footer-dish-link" data-dish="Masala Dosa">Crispy Masala Dosa</a></li>
+                        <li><a href="#menu" class="footer-dish-link" data-dish="Gulab Jamun">Warm Gulab Jamun</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact & Timings</h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Sector 62, Noida, Uttar Pradesh</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+919031762157" class="footer-tel phone-display-number">+91 90317 62157</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="https://wa.me/919031762157" target="_blank" rel="noopener noreferrer"
+                            class="footer-wa whatsapp-display-number">+91 90317 62157</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Mon–Sun: 11:00 AM – 11:30 PM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> The Royal Saffron. All Rights Reserved. Crafted for Fine Dining
+                    Excellence.</p>
+                <p class="client-note">Demo Template for Restaurant Owners • Ready for instant branding & customization
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= FLOATING ACTION BUTTON (WHATSAPP) ================= -->
+    <div class="floating-actions">
+        <a href="https://wa.me/919031762157?text=Hi%2C%20I%20would%20like%20to%20view%20today%27s%20specials"
+            target="_blank" rel="noopener noreferrer" class="floating-wa-btn" id="floatingWhatsAppBtn"
+            aria-label="Chat on WhatsApp">
+            <span class="floating-tooltip">Order on WhatsApp</span>
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- ================= MOBILE FIXED BOTTOM BAR ================= -->
+    <div class="mobile-sticky-bottom-bar" id="mobileBottomBar">
+        <a href="tel:+919031762157" class="mobile-bar-action bar-call">
+            <i class="fa-solid fa-phone"></i>
+            <span>Call Now</span>
+        </a>
+        <a href="#menu" class="mobile-bar-action bar-menu">
+            <i class="fa-solid fa-utensils"></i>
+            <span>View Menu</span>
+        </a>
+        <a href="https://wa.me/919031762157" target="_blank" rel="noopener noreferrer"
+            class="mobile-bar-action bar-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- ================= PRODUCT DETAILS MODAL ================= -->
+    <div class="modal-backdrop" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"
+        style="display: none;">
+        <div class="modal-dialog">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close details">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="modal-content-grid">
+                <!-- Modal Left: Product Image -->
+                <div class="modal-image-wrapper">
+                    <img id="modalProductImage" src="" alt="Dish Preview">
+                    <span class="modal-veg-badge" id="modalVegBadge">
+                        <span class="food-symbol" id="modalSymbol"></span>
+                        <span id="modalDietText">Veg</span>
+                    </span>
+                    <span class="modal-category-tag" id="modalCategoryTag">Main Course</span>
+                </div>
+
+                <!-- Modal Right: Product Details -->
+                <div class="modal-details-body">
+                    <div class="modal-header-info">
+                        <div class="modal-rating-price">
+                            <div class="modal-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span id="modalRating">4.8</span>
+                                <span class="modal-review-count">(150+ reviews)</span>
+                            </div>
+                            <div class="modal-price" id="modalPrice">₹180</div>
+                        </div>
+                        <h2 class="modal-title" id="modalTitle">Chicken Biryani</h2>
+                    </div>
+
+                    <div class="modal-spec-chips">
+                        <div class="spec-chip">
+                            <i class="fa-solid fa-user-group"></i>
+                            <div>
+                                <small>Serving</small>
+                                <strong id="modalServing">Serves 1–2</strong>
+                            </div>
+                        </div>
+                        <div class="spec-chip">
+                            <i class="fa-solid fa-stopwatch"></i>
+                            <div>
+                                <small>Prep Time</small>
+                                <strong id="modalPrepTime">25–30 mins</strong>
+                            </div>
+                        </div>
+                        <div class="spec-chip">
+                            <i class="fa-solid fa-fire-burner"></i>
+                            <div>
+                                <small>Spice Level</small>
+                                <strong id="modalSpiceLevel">Medium Spiced</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-desc-box">
+                        <h4>Description</h4>
+                        <p id="modalDescription">Aromatic basmati rice cooked with tender chicken, selected spices and
+                            herbs. A perfect blend of taste and tradition.</p>
+                    </div>
+
+                    <div class="modal-chef-notes">
+                        <i class="fa-solid fa-circle-check gold-icon"></i>
+                        <span>Freshly prepared on order. Served hot with complementary accompaniments.</span>
+                    </div>
+
+                    <!-- Direct Actions in Modal -->
+                    <div class="modal-action-buttons">
+                        <a href="tel:+919876543210" class="btn btn-primary btn-modal-action" id="modalCallBtn">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call Now</span>
+                        </a>
+                        <button class="btn btn-whatsapp btn-modal-action" id="modalWhatsAppShareBtn">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>Share on WhatsApp</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-footnote">
+                        <small><i class="fa-solid fa-shield-halved"></i> Quick order confirmation via direct WhatsApp
+                            chat or phone</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
